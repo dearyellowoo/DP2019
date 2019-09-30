@@ -30,7 +30,7 @@
     <body>
         <a href="index.html">뒤로가기</a>
         <br>
-        
+
         <b>내용1</b>
         <div class="c_name">클래스</div>
         <div id="i_name">아이디</div>
@@ -59,6 +59,148 @@
             a:active{color:yellow;}
             a:focus{color: pink;}
         </style>
+        <style>
+            #boxmodel1{
+                background-color: #dddddd;
+                width: 100px;
+                height: 200px;
+                margin: 100px; /* 바깥여백 */
+                padding: 100px;/* 안쪽여백 */
+                border:solid 1px black; /* 경계 */
+                /* 경계: 선종류 선두께 선색깔 */
+            }
+        </style>
         <a href="#">링크 버튼</a>
+        <div id="boxmodel1">박스모델1</div>
+        인라인 태그
+
+        <style>
+            /* 하위 요소 선택자, 띄어쓰기 */
+            div li{
+                color: coral;
+            }
+            /* 자식 요소 선택자, > 부등호 기호 */
+            div>ul>li{
+                text-decoration: underline;
+            }
+            /* 선택자 그룹화, 쉽표(,) */
+            div,ul,li{
+                color: blueviolet;
+                /* 16진수, 0~9~A~F */
+                color: #000;/* 3자리 컬러코드 #rgb */
+                color: #a441aa; /* 6자리 컬러코드 #rrggbb */
+                color: rgb(0,0,255);
+                color: rgb(0%,0%,100%);
+            }
+        </style>
+        <div>
+            container
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+                <li>리스트4</li>
+            </ul>
+        </div>
+        
+        <style>
+            .position_test{
+                background-color: #ddd;
+                /* static 정적인(기본) */
+                position: static;
+                /* absolute 절대적인 */
+                /* top, left, right, bottom 위치 조종 가능 */
+                position: absolute;
+                top: 110px;
+                left: 100px;
+                /* fixed 고정된 */
+                position: fixed;
+            }
+
+        </style>
+        <div class="position_test">
+            position_test
+        </div>
+
+        <style>
+            .font_test{
+                font-family: Brandon Grotesque, sans-serif;
+                /* small,medium, large 로도 사용가능 */
+                font-size: 10px;
+                /* normal, bold, boledr */
+                font-weight: border;
+                /* normal, ltalic, oblique */
+                font-style: oblique;
+                /* left, center, right*/
+                /* 인라인 요소에만 적용됨 */
+                text-align:center;
+                font-variant: small-caps;
+
+                height: 150px;
+                background-color: coral;
+
+                /* none, underline,overline,line-through */
+                text-decoration: underline;
+            }
+
+        </style>
+
+        <div class="font_test">
+
+            AbcDEFghIjklMnOpQRstU
+            container
+            font_test
+            <img width="50px" src="img/puppy.jpg" alt="">
+            
+        </div>
+
+       
+       <style>
+           .letter_line{
+               /* 글자 사이의 간격 */
+               letter-spacing: 10px;
+               /* 줄 간격 */
+               line-height: 30px;
+               /* 들여쓰기 */
+               text-indent: 50px;
+           }
+       </style>
+        <div class="letter_line">
+                '캡틴' 손흥민(27·토트넘)이 평양 땅을 밟는다.
+
+                파울루 벤투 감독이 이끄는 A대표팀이 카타르를 향한 두 번째 여정에 나선다. 
+                벤투 감독은 30일 서울 신문로 축구회관에서 2022년 카타르월드컵 아시아지역 2차 예선에 나설 A대표팀 명단을 발표했다. 
+                조별리그 첫 경기에서 승리를 챙긴 벤투호는 10월10일 화성종합경기타운 주경기장에서 스리랑카와 2차전을 치르고, 
+                15일 평양 김일성경기장에서 북한과 3차전을 치른다. 다음 달 7일 파주 NFC(대표팀트레이닝센터)에 소집해 훈련에 돌입한다.
+                
+
+        </div>
+
+        <style>
+            .text-transform{
+                /* none :일반
+                uppercase : 대문자로
+                lowercase : 소문자로
+                capitalize : 첫글자 대문자 */
+                text-transform:lowercase;
+            }
+        </style>
+        <div class="text-transform">
+                AbcDEFghIjklMnOpQRstU
+        </div>
+
+        
+        <style>
+            .pre{
+                white-space:pre;
+                /* 띄어쓰기까지 있는 그대로 보여주는 pre */
+            }
+        </style>
+        <!-- &nbsp;띄어쓰기, <br/>줄내림 -->
+        <div class="pre">
+            1 2 3     4 5 6
+            7 8 9 0
+        </div>
+        
     </body>
 </html>
